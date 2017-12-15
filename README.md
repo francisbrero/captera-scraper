@@ -1,6 +1,7 @@
 # captera-scraper
 Scrape lead info from specific pages on captera
 
+![Alt Text](http://g.recordit.co/R6QyY1A1fr.gif)
 
 # Initialization
 ## ensure you have node
