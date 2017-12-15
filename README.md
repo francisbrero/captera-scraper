@@ -22,6 +22,9 @@ python
 . setup_env.sh 
 ```
 
+folders:
+create a data, a debug and an output folder
+
 We're now ready to go!
 
 # Step 1 => configure the scraper
