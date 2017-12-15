@@ -57,3 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# Node modules
+node_modules/
+
+# debug images
+debug/*.png
+
+# data folders
+data/*.html
+output/*.csv

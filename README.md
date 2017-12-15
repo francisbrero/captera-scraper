@@ -1,2 +1,62 @@
 # captera-scraper
 Scrape lead info from specific pages on captera
+
+
+# Initialization
+## ensure you have node
+If you don't that's a shame 
+	=> with nvm go [here](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps)
+	=> old school [here](https://nodejs.org/en/download/)
+
+## ensure you have python 2.7 (at least)
+Go [here](https://www.python.org/downloads/)
+
+## install dependencies for the project
+Node
+```
+npm install
+```
+
+python
+```
+. setup_env.sh 
+```
+
+We're now ready to go!
+
+# Step 1 => configure the scraper
+
+Open lib/scraper.js and: 
+
+## input the page you want to scrape
+```
+	// input the captera page to scraape
+	.goto('https://www.capterra.com/p/165410/WooCommerce/')
+```
+
+Save
+
+# Step 2 => run the scraper
+```
+node lib/scraper.js 
+```
+
+### Debug:
+This creates a couple pictures in debug to ensure everything went smoothly
+
+### Output
+The scraper outputs a raw html in ./data called 'captera.html' which contains all the goodness you're looking for
+
+
+# Step 3 => parse the html to get a clean csv
+```
+python lib/html_parse.py 
+```
+
+this outputs a csv file '/output/captera.csv' text qualified.
+
+Enjoy!
+
+
+# Comments/feedback 
+are welcome!
