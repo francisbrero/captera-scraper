@@ -64,5 +64,5 @@ node_modules/
 debug/*.png
 
 # data folders
-data/*.html
+data/*.*
 output/*.csv
