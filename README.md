@@ -9,21 +9,29 @@ If you don't that's a shame
 	=> with nvm go [here](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps)
 	=> old school [here](https://nodejs.org/en/download/)
 
-## ensure you have python 2.7 (at least)
-Go [here](https://www.python.org/downloads/)
+## ensure you have python 2.7 (at least) and pip
+for pyton, go [here](https://www.python.org/downloads/)
+for pip, run
+```
+sudo easy_install pip
+```
 
 ## install dependencies for the project
-Node
+### Node
 ```
 npm install
 ```
 
-python
+### python
 ```
 . setup_env.sh 
 ```
+if you run into errors about ```Permission denied: ‘/Library/Python/2.7/site-packages/```, you might need to change permissions on your python folder. For that run:
+```
+sudo chown -R $USER /Library/Python/2.7/
+```
 
-folders:
+### folders
 create a data, a debug and an output folder
 
 We're now ready to go!
